@@ -8,4 +8,10 @@ Rails.application.routes.draw do
   end
 
   root 'welcome#index'
+
+  namespace :api do
+    resources :fc do
+
+    end
+  end
 end
